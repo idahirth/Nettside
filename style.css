@@ -1,0 +1,65 @@
+.itemMain { grid-area: main; 
+  background-image: url(amalie2.png);
+  width: 1410px;
+  height: 305px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.itemHeader { grid-area: header; 
+  background-color: rgba(156, 218, 182, 0.541);
+  height: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.itemProgrammering { grid-area: programmering; 
+background-color: rgba(129, 189, 197, 0.363);
+height: 200px;
+color: white;
+text-shadow: 1px 1px 2px #000000;
+}
+
+.itemTeknologiforstaelse { grid-area: teknologiforstaelse; 
+background-color: rgba(101, 145, 185, 0.459);
+color: white;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.itemMedia { grid-area: media; 
+background-color: rgba(154, 220, 223, 0.658);
+color: white;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main main main'
+    'header header header header header header'
+    'programmering programmering teknologiforstaelse teknologiforstaelse media media';
+  grid-gap: 2px;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 30px;
+}
+
+a:link{
+  color: white;
+}
+
+a:hover{
+  color: rgb(201, 225, 235);
+}
+
+a:visited{
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
