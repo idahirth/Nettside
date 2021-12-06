@@ -8,7 +8,8 @@
 
 .itemHeader { grid-area: header; 
   background-color: rgba(156, 218, 182, 0.541);
-  height: 20px;
+  height: 10px;
+  width: 1395;
   color: white;
   text-shadow: 1px 1px 2px #000000;
 }
@@ -17,19 +18,48 @@
 background-color: rgba(129, 189, 197, 0.363);
 height: 200px;
 color: white;
+text-align: center;
+padding-top: 150px;
+font-size: 30px;
+width: 469px;
 text-shadow: 1px 1px 2px #000000;
+transition: transform .2s; /* Animation */
+}
+
+.itemProgrammering:hover {
+  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .itemTeknologiforstaelse { grid-area: teknologiforstaelse; 
 background-color: rgba(101, 145, 185, 0.459);
+height: 200px;
 color: white;
-  text-shadow: 1px 1px 2px #000000;
+text-align: center;
+padding-top: 150px;
+font-size: 30px;
+width: 469px;
+text-shadow: 1px 1px 2px #000000;
+transition: transform .2s; /* Animation */
+}
+
+.itemTeknologiforstaelse:hover {
+  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .itemMedia { grid-area: media; 
 background-color: rgba(154, 220, 223, 0.658);
+height: 200px;
 color: white;
-  text-shadow: 1px 1px 2px #000000;
+text-align: center;
+padding-top: 150px;
+font-size: 30px;
+width: 469px;
+text-shadow: 1px 1px 2px #000000;
+transition: transform .2s; /* Animation */
+}
+
+.itemMedia:hover {
+  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .grid-container {
@@ -62,4 +92,56 @@ a:visited{
 
 a {
   text-decoration: none;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media (max-width: 1000px) {
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'main'
+      'header'
+      'programmering'
+      'teknologiforstaelse'
+      'media';
+    grid-gap: 2px;
+    padding: 0px;
+  }
+  .itemProgrammering { grid-area: programmering; 
+    background-color: rgba(129, 189, 197, 0.363);
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 30px;
+    width: 100%;
+    text-shadow: 1px 1px 2px #000000;
+    transition: transform .2s; /* Animation */
+    }
+
+  .itemTeknologiforstaelse { grid-area: teknologiforstaelse; 
+    background-color: rgba(101, 145, 185, 0.459);
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 30px;
+    width: 100%;
+    text-shadow: 1px 1px 2px #000000;
+    transition: transform .2s; /* Animation */
+    }
+
+    .itemMedia { grid-area: media; 
+    background-color: rgba(154, 220, 223, 0.658);
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 30px;
+    width: 469px;
+    text-shadow: 1px 1px 2px #000000;
+    transition: transform .2s; /* Animation */
+    }
+
 }

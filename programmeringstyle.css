@@ -1,0 +1,84 @@
+body {
+    background-image: url(amalie5copy.jpg);
+    opacity: 100%;
+}
+
+.item1 { grid-area: header; 
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    height: 50px;
+    width: 1420px;
+    background-color: rgba(129, 189, 197, 0.904);
+    border-radius: 40%;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.item2 { grid-area: home; 
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    background-color: rgba(156, 218, 182, 0.541);
+    border-radius: 1%;
+}
+
+.item3 { grid-area: projects; 
+    height: 645px;
+    text-align: center;
+    height: 640px;
+    border-radius: 1%;
+    background-color: rgba(129, 189, 197, 0.904);
+    font-size: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'home projects projects projects projects projects';
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+}
+
+.item2 header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: rgba(156, 218, 182, 0.541);
+    user-select: none;
+}
+
+.item2 ul a {
+    display: block;
+    height: 100%;
+    width: 20px;
+    line-height: 65px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(41, 83, 59, 0.541);
+    padding-left: 10px;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 20px;
+    color: rgb(138, 211, 168);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.item3 a{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.904);
+    color: rgb(129, 189, 197);
+}
