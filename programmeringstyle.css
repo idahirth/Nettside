@@ -83,17 +83,45 @@ ul {
     color: rgb(129, 189, 197);
 }
 
-@media (max-width 1000px) {
+@media (max-width: 1000px) {
     .item1 { grid-area: header; 
         height: 50px;
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
         color: white;
         height: 50px;
-        width: 1px;
+        width: 750px;
         background-color: rgba(129, 189, 197, 0.904);
         border-radius: 40%;
         align-items: center;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
+
+    .item3 { grid-area: projects; 
+        width: 600px;
+        text-align: center;
+        height: 640px;
+        border-radius: 1%;
+        background-color: rgba(129, 189, 197, 0.904);
+        font-size: 40px;
+    }
+    
+    ul li:hover a {
+        padding-left: 5px;
+        color: rgb(138, 211, 168);
+    }
+   
+    .item2 ul a {
+        display: block;
+        height: 100%;
+        width: 200px;
+        line-height: 65px;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgba(41, 83, 59, 0.541);
+        padding-left: 10px;
+        box-sizing: border-box;
+        transition: .4s;
+    }
+
 }
