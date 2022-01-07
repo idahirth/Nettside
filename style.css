@@ -1,5 +1,6 @@
 .itemMain { grid-area: main; 
   background-image: url(amalie2.png);
+  /* Bakgrunnsbilde hentet fra https://www.bt.no/nyheter/lokalt/i/mRVqRv/her-er-de-videregaaende-skolene-det-er-vanskeligst-aa-komme-inn-paa */
   width: 1410px;
   height: 305px;
   color: white;
@@ -23,11 +24,11 @@ padding-top: 150px;
 font-size: 30px;
 width: 469px;
 text-shadow: 1px 1px 2px #000000;
-transition: transform .2s; /* Animation */
+transition: transform .2s; /* Animasjon */
 }
 
 .itemProgrammering:hover {
-  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.01); 
 }
 
 .itemTeknologiforstaelse { grid-area: teknologiforstaelse; 
@@ -139,7 +140,7 @@ a {
     text-align: center;
     padding-top: 150px;
     font-size: 30px;
-    width: 469px;
+    width: 100%;
     text-shadow: 1px 1px 2px #000000;
     transition: transform .2s; /* Animation */
     }

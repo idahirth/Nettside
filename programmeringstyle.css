@@ -82,3 +82,18 @@ ul {
     background-color: rgba(255, 255, 255, 0.904);
     color: rgb(129, 189, 197);
 }
+
+@media (max-width 1000px) {
+    .item1 { grid-area: header; 
+        height: 50px;
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        height: 50px;
+        width: 1px;
+        background-color: rgba(129, 189, 197, 0.904);
+        border-radius: 40%;
+        align-items: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+}

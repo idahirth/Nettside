@@ -29,7 +29,7 @@ body {
     height: 640px;
     border-radius: 3%;
     background-color: rgba(101, 144, 185, 0.904);
-    
+    font-size: 40px;
 }
 
 .grid-container {
@@ -74,4 +74,10 @@ ul li:hover a {
 
 ul {
     list-style-type: none;
+}
+
+.item3 a{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.904);
+    color: rgba(101, 144, 185, 0.904);
 }

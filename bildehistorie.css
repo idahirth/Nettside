@@ -1,0 +1,42 @@
+html {
+    background-color: rgb(129, 189, 197);
+}
+
+.item1 { grid-area: header; 
+background-color: white;}
+
+.item2 { grid-area: main; 
+size: auto;
+}
+
+.item3 { grid-area: footer; 
+
+}
+
+.item4 { grid-area: bottom; }
+
+.item5 { grid-area: lower; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer'
+    'bottom bottom bottom bottom bottom bottom'
+    'lower lower lower lower lower lower';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 a {
+    text-decoration: none;
+    color: rgb(129, 189, 197);
+}
+
